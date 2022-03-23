@@ -34,6 +34,10 @@
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
+#contact {
+    background-color: #20212b;
+}
 *,
 ::after,
 ::before {
@@ -16370,7 +16374,7 @@ header.header--inner {
 }
 @media only screen and (min-width: 1367px) {
     .header-logo__img {
-        max-height: 45px;
+        max-height: 65px;
     }
 }
 .lang-select {
@@ -18415,8 +18419,7 @@ header.header--intro .button {
 }
 @media only screen and (min-width: 1200px) {
     .text-section .text-section__heading {
-        font-size: 400px;
-        line-height: 250px;
+        font-size: 200px;
     }
 }
 .text-section__title {
