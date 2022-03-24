@@ -1,31 +1,6 @@
-@charset "UTF-8"; /*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+@charset "UTF-8";
+
 :root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -35,9 +10,6 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-#contact {
-    background-color: #20212b;
-}
 *,
 ::after,
 ::before {
@@ -13930,14 +13902,14 @@ body.compensate-for-scrollbar {
     width: 1em;
 }
 body {
-    font-family: Quicksand, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #777;
     min-height: 100vh;
     overflow-x: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.7;
 }
@@ -16291,7 +16263,7 @@ header.header--inner {
     cursor: pointer;
     height: 16px;
     width: 27px;
-    margin: 0 15px 0 0;
+    margin: 0 30px 0 0;
     -webkit-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
@@ -16374,7 +16346,7 @@ header.header--inner {
 }
 @media only screen and (min-width: 1367px) {
     .header-logo__img {
-        max-height: 65px;
+        max-height: 70px;
     }
 }
 .lang-select {
@@ -17012,7 +16984,7 @@ header.header--intro .button {
 }
 .promo-slider .align-container {
     height: auto;
-    padding: 120px 0 250px 0;
+    padding: 120px 0 130px 0;
 }
 @media only screen and (min-width: 768px) {
     .promo-slider .align-container {
@@ -17035,8 +17007,8 @@ header.header--intro .button {
 }
 .promo-slider__item--style-1 .promo-slider__title span:first-of-type {
     color: #fff;
-    font-size: 36px;
-    line-height: 1.4;
+    font-size: 48px;
+    line-height: 1.1;
     letter-spacing: -0.05em;
 }
 @media only screen and (min-width: 576px) {
@@ -17116,7 +17088,7 @@ header.header--intro .button {
 .promo-slider__item--style-1 .promo-slider__button {
     color: #fff;
     width: 100%;
-    max-width: 215px;
+    max-width: 230px;
     margin-top: 35px;
 }
 .promo-slider__item--style-1 .promo-slider__button:hover {
@@ -17640,9 +17612,9 @@ header.header--intro .button {
 .about-us p:last-of-type {
     margin-bottom: 0;
 }
-.about-us .info-box {
+/* .about-us .info-box {
     margin-top: 70px;
-}
+} */
 @media only screen and (min-width: 992px) {
     .about-us .info-box {
         margin: 0;
@@ -17660,7 +17632,7 @@ header.header--intro .button {
     position: relative;
     color: #fff;
     text-align: center;
-    padding: 67px 30px 62px 30px;
+    /* padding: 67px 30px 62px 30px; */
 }
 @media only screen and (min-width: 768px) {
     .info-box {
@@ -17739,7 +17711,10 @@ header.header--intro .button {
 .causes {
     overflow: hidden;
 }
-.causes::before {
+#routes {
+    background: #f9f7f6;
+}
+/* .causes::before {
     content: "";
     display: block;
     width: 100%;
@@ -17749,7 +17724,7 @@ header.header--intro .button {
     top: 0;
     left: 0;
     z-index: -1;
-}
+} */
 .causes__heading-text {
     margin-bottom: 0;
     margin-top: 0;
@@ -17827,34 +17802,34 @@ header.header--intro .button {
 .causes-slider__nav .slider__prev {
     color: #343877;
 }
-.causes-item {
+.causes-item, .route-item {
     margin-bottom: 50px;
 }
-.causes-item__title {
+.causes-item__title, .route-item__title {
     margin-bottom: 20px;
 }
-.causes-item__title a {
+.causes-item__title a, .route-item__title a {
     color: inherit;
     text-decoration: none;
     -webkit-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
 }
-.causes-item__title a:hover {
+.causes-item__title a:hover, .route-item__title a:hover {
     color: inherit;
     opacity: 0.75;
 }
-.causes-item__img {
+.causes-item__img, .route-item__img {
     position: relative;
     margin-top: 45px;
 }
-.causes-item .img--bg {
+.causes-item .img--bg, .route-item__img .img--bg {
     -o-object-position: center center;
     object-position: center center;
     font-family: "object-fit: cover; object-position: center center";
     z-index: 1;
 }
-.causes-item__badge {
+.causes-item__badge, .route-item__badge {
     display: inline-block;
     color: #fff;
     font-size: 14px;
@@ -17904,20 +17879,21 @@ header.header--intro .button {
     display: block;
     padding-top: 76.47059%;
 }
-.causes-item--primary .causes-item__body {
+.causes-item--primary .causes-item__body, .route-body, .form-body {
     padding: 45px 15px 46px 15px;
     background: #fff;
     -webkit-box-shadow: 0 0 15px 0 rgba(15, 13, 13, 0.06);
     box-shadow: 0 0 15px 0 rgba(15, 13, 13, 0.06);
 }
-.causes-item--primary .causes-item__badge {
+.causes-item--primary .causes-item__badge, .route-item__badge  {
     position: absolute;
     left: 15px;
     top: -15px;
     z-index: 2;
 }
 .causes-item--primary .causes-item__lower,
-.causes-item--primary .causes-item__top {
+.causes-item--primary .causes-item__top, 
+.route-item__top {
     padding: 0 15px;
 }
 .causes-item--primary .causes-item__button {
@@ -18654,9 +18630,9 @@ header.header--intro .button {
     right: 0;
 }
 @media only screen and (min-width: 1367px) {
-    .donors::before {
+    /* .donors::before {
         width: calc(100% - 75px);
-    }
+    } */
 }
 .donors--style-2::before {
     display: none;
@@ -18710,9 +18686,9 @@ header.header--intro .button {
     -o-transition: background 0.3s;
     transition: background 0.3s;
 }
-.instagram-slider__item:hover {
+/* .instagram-slider__item:hover {
     background: rgba(53, 57, 118, 0.7);
-}
+} */
 .instagram-slider__item::before {
     content: "";
     display: block;
@@ -20192,6 +20168,9 @@ footer.footer--front_3 .footer__lower {
 .storie-details .text-filled,
 .storie-details__blockquote {
     margin: 50px 0;
+}
+#volunteer {
+    background-color: #f9f7f6;
 }
 .register-form .form__field {
     margin-bottom: 30px;
