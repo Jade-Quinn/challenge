@@ -14051,7 +14051,7 @@ section.section {
     background-color: #efc940;
     border-radius: 0;
     width: 260px;
-    padding: 0 30px 0 30px;
+    /* padding: 0 30px 0 30px; */
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16336,12 +16336,12 @@ header.header--inner {
 }
 .header-logo__img {
     display: inline-block;
-    max-height: 35px;
+    max-height: 45px;
     max-width: auto;
 }
 @media only screen and (min-width: 992px) {
     .header-logo__img {
-        max-height: 40px;
+        max-height: 50px;
     }
 }
 @media only screen and (min-width: 1367px) {
@@ -17635,9 +17635,9 @@ header.header--intro .button {
     /* padding: 67px 30px 62px 30px; */
 }
 @media only screen and (min-width: 768px) {
-    .info-box {
+    /* .info-box {
         padding: 117px 40px 112px 40px;
-    }
+    } */
 }
 @media only screen and (min-width: 992px) {
     .info-box {
@@ -18389,7 +18389,7 @@ header.header--intro .button {
 }
 @media only screen and (min-width: 992px) {
     .text-section .text-section__heading {
-        font-size: 300px;
+        font-size: 200px;
         line-height: 160px;
     }
 }
