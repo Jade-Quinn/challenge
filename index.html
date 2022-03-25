@@ -17,6 +17,26 @@
 </head>
 <body>
     <div class="page-wrapper">
+        <!-- aside dropdown start-->
+        <div class="aside-dropdown">
+            <div class="aside-dropdown__inner"><span class="aside-dropdown__close">
+                <svg class="icon">
+                    <use xlink:href="#close"></use>
+                </svg></span>
+            <div class="aside-dropdown__item d-lg-none d-block">
+                <ul class="aside-menu">
+                    <li data-toggle="collapse" data-target=".navbar-collapse" class="aside-menu__item "><a class="aside-menu__link" href="index.html#about"><span>About</span></a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse" class="aside-menu__item"><a class="aside-menu__link" href="index.html#routes"><span>Routes</span></a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse" class="aside-menu__item"><a class="aside-menu__link" href="index.html#charities"><span>Charities</span></a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse" class="aside-menu__item"><a class="aside-menu__link" href="index.html#volunteer"><span>Volunteer</span></a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse" class="aside-menu__item"><a class="aside-menu__link" href="index.html#contact"><span>Contact</span></a></li>
+                </ul>
+            </div>
+            <div class="aside-dropdown__item"><a class="button button--squared" href="https://eventmaster.ie/event/rz5WuPmS9y"><span>Register</span></a></div>
+            </div>
+        </div>
+        <!-- aside dropdown end-->
+
         <!-- header start-->
         <header class="header header--front">
             <div class="container-fluid">
@@ -132,6 +152,7 @@
                         <div class="col-lg-6 col-xl-5 offset-xl-1">
                             <div class="info-box">
                                 <img class="img--layout" src="img/charity_cycle_clare.jpg" alt="Charity Cycle Loop Head West Clare"/>
+                                <img class="img--bg" src="img/charity_cycle_clare.jpg" alt="img"/>
                             </div>
                         </div>
                     </div>
@@ -166,8 +187,8 @@
                                         90km Route
                                     </h6>
                                     <p>Suitable for all levels, this route is E-Bike friendly and takes in beautiful views of the Wild Atlantic Way. Preview the route in Strava using the link below. Entry is €50 plus booking charge.</p>
-                                    <a class="button button--primary" href="https://www.strava.com/routes/2937334589599717466" target="blank">View in Strava</a>
-                                    <a class="button button--primary" href="https://eventmaster.ie/event/rz5WuPmS9y" target="blank">Register</a>
+                                    <a class="button button--primary m-1" href="https://www.strava.com/routes/2937334589599717466" target="blank">View in Strava</a>
+                                    <a class="button button--primary m-1" href="https://eventmaster.ie/event/rz5WuPmS9y" target="blank">Register</a>
                                 </div>
                                 <div class="route-item__img">
                                     <div class="route-item__badge" style="background-color: #49C2DF">Intermediate</div>
@@ -182,8 +203,8 @@
                                         160km Route
                                     </h6>
                                     <p>A more challenging distance which takes you along the Loop Head peninsula. Preview the route in Strava using the link below. Entry is €50 plus booking charge.</p>
-                                    <a class="button button--primary" href="https://www.strava.com/routes/2937329824763556732" target="blank">View in Strava</a>
-                                    <a class="button button--primary" href="https://eventmaster.ie/event/rz5WuPmS9y" target="blank">Register</a>
+                                    <a class="button button--primary m-1" href="https://www.strava.com/routes/2937329824763556732" target="blank">View in Strava</a>
+                                    <a class="button button--primary m-1" href="https://eventmaster.ie/event/rz5WuPmS9y" target="blank">Register</a>
                                 </div>
                                 <div class="route-item__img">
                                     <div class="route-item__badge" style="background-color: #F36F8F">Advanced</div>
@@ -214,7 +235,7 @@
                 </div>
                 <!-- end title of charity section -->
                 <div class="row no-gutters projects-masonry">
-                    <!-- first stack -->
+                    <!-- 1 stack -->
                     <div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--vertical">
                         <div class="projects-masonry__text" style="background-color: #2EC774;">
                             <div class="projects-masonry__inner">
@@ -225,6 +246,10 @@
                                 <a class="button button--primary" href="https://downsyndrome.ie/branches-detail/clare/" target="blank">Learn More</a>
                             </div>
                         </div>
+                    </div>
+                    <!-- 1 stack end -->
+                    <!-- 2 stack -->
+                    <div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--vertical">
                         <div class="projects-masonry__text" style="background-color: #9BC35E;">
                             <div class="projects-masonry__inner">
                                 <h3 class="projects-masonry__title">
@@ -235,12 +260,16 @@
                             </div>
                         </div>
                     </div>
-                    <!-- first stack end -->
-                    <!-- second stack -->
+                    <!-- 2 stack end -->
+                    <!-- 3 stack -->
                     <div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--vertical">
                         <div class="projects-masonry__img">
                             <img class="img--bg" src="img/down_syndrome_clare.jpg" alt="img"/>
                         </div>
+                    </div>
+                    <!-- 3 stack end -->
+                    <!-- 4 stack -->
+                    <div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--vertical">
                         <div class="projects-masonry__text" style="background-color: #E78F51;">
                             <div class="projects-masonry__inner">
                                 <h3 class="projects-masonry__title">
@@ -251,8 +280,21 @@
                             </div>
                         </div>
                     </div>
-                    <!-- second stack end -->
-                    <!-- third stack -->
+                    <!-- 4 stack end -->
+                    <!-- 5 stack -->
+                    <div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--vertical">
+                        <div class="projects-masonry__text" style="background-color: #e75151;">
+                            <div class="projects-masonry__inner">
+                                <h3 class="projects-masonry__title">
+                                    <a href="https://downsyndrome.ie/branches-detail/clare/">Happy Feet Happy Minds</a>
+                                </h3>
+                                <p>Happy Feet Happy Minds provides mental health support services for young adults through educational programmes and counselling.</p>
+                                <a class="button button--primary" href="https://www.facebook.com/happyfeethappyminds/" target="blank">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 stack end -->
+                    <!-- 6 stack -->
                     <div class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-1 projects-masonry__item--vertical">
                         <div class="projects-masonry__text" style="background-color: #e75151;">
                             <div class="projects-masonry__inner">
@@ -267,7 +309,7 @@
                             <img class="img--bg" src="img/west_clare_cancer_society.jpg" alt="img"/>
                         </div>
                     </div>
-                    <!-- third stack end -->
+                    <!-- 6 stack end -->
                 </div>
             </section>
             <!-- charities end-->
