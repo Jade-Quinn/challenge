@@ -83,7 +83,7 @@
                         
                     </div>
                     <div class="col-auto d-flex align-items-center">
-                        <div class="dropdown-trigger d-block d-md-none">
+                        <div class="dropdown-trigger d--none">
                             <div class="dropdown-trigger__item"></div>
                         </div>
                         <a class="button button--squared" href="https://eventmaster.ie/event/rz5WuPmS9y" target="blank">
@@ -391,10 +391,6 @@
                             <div class="form-body-2">
                                 <div class="text-center">
                                     <div class="heading heading--primary">
-                                        <!-- <h2 class="heading__title">
-                                            <span>Volunteer</span>
-                                            <span>Form</span>
-                                        </h2> -->
                                         <span class="heading__pre-title">To volunteer please fill out the form, <br>we will get in touch as soon as possible.</span>
                                     </div>
                                     <!-- user form start-->
@@ -412,6 +408,7 @@
                 </div>
             </section>
             <!-- volunteer end-->
+            <!-- contact start-->
             <section class="section testimonials--style-2" id="contact">
                 <div class="testimonials--style-2__bg jarallax">
                     <picture>
@@ -427,68 +424,56 @@
                             
                         <div class="col-lg-6 offset-lg-3 text-center">
                             <div class="heading heading--primary">
-                                <!-- <h2 class="heading__title">
-                                    <span>Contact</span>
-                                    <span>Form</span>
-                                </h2> -->
                                 <span class="heading__pre-title">Send us a message, <br>we will get back to as soon as possible.</span>
                             </div>
                         </div>
                             
                         <div class="col-lg-6 offset-lg-3 text-center">
                             <!-- user form start-->
-                            <form id="contact-form" method="post" action="contact.php" role="form">
 
-                                <div class="messages"></div>
-                            
-                                <div class="controls">
-                            
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_name">Name *</label>
-                                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required.">
-                                                <div class="help-block with-errors"></div>
+                            <!-- Contact form -->
+                            <div class="contact-form">
+                                <div>
+                                    <div>
+                                        <form class="validate-form">
+                                            <div>
+                                                <div class="input-row">
+                                                    
+                                                    <input type="text" class="form-control required-field input-1" id="name" placeholder="Name" required>
+                                                </div>
+                                                <div class="input-row">
+                                                    
+                                                    <input type="email" class="form-control required-email input-1" id="mail" placeholder="Email" required>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="form_email">Email *</label>
-                                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                                <div class="help-block with-errors"></div>
+                                            <div>
+                                                <div class="input-row">
+                                                    
+                                                    <input type="tel" class="form-control required-number input-1" id="phone" placeholder="Phone Number" required>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label for="form_message">Message *</label>
-                                                <textarea id="form_message" name="message" class="form-control" placeholder="Got a question? *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                                                <div class="help-block with-errors"></div>
+                                            <div>
+                                                <div class="input-row">
+                                                    
+                                                    <textarea id="message" cols="30" rows="10" placeholder="Say Hello!" class="form-control required-field input-2" required></textarea>
+                                                </div>
+                                                <div id="submit-btn">
+                                                    <input type="submit" value="send" class="form__submit">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <p class="text-muted">
-                                                <strong>*</strong> These fields are required.</p>
-                                        </div>
+                                        </form>					
                                     </div>
                                 </div>
+                            </div>
+                            <!-- ./Contact form -->
                             
-                            </form>
                             <!-- user form end-->
                         </div>
                     </div>
                 </div>
                 <!-- contact end-->
             </section>
-            <!-- testimonials style-2 end-->
+            <!-- contact end-->
             <!-- donors start-->
             <section class="section donors">
                 <div class="container">
