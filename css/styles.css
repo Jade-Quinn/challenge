@@ -12109,12 +12109,12 @@ body.compensate-for-scrollbar {
     right: 0;
     top: 0;
 }
-.fancybox-stage {
+/* .fancybox-stage {
     direction: ltr;
     overflow: visible;
     -webkit-transform: translateZ(0);
     z-index: 99994;
-}
+} */
 .fancybox-is-open .fancybox-stage {
     overflow: hidden;
 }
@@ -13909,7 +13909,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.7;
 }
@@ -13953,12 +13953,12 @@ section.section {
 }
 @media only screen and (min-width: 992px) {
     section.section {
-        padding: 120px 0;
+        padding: 100px 0;
     }
 }
 @media only screen and (min-width: 1200px) {
     section.section {
-        padding: 140px 0;
+        padding: 100px 0;
     }
 }
 .align-container {
@@ -14631,14 +14631,14 @@ section.section {
     left: 3px;
 }
 .form__checkbox-mask::after,
-.form__checkbox-mask::before {
+/* .form__checkbox-mask::before {
     content: "";
     display: inline-block;
     position: absolute;
     background-color: #efc940;
     opacity: 0;
     transtion: all 0.3s;
-}
+} */
 .form__input-checkbox {
     position: absolute;
     top: 6px;
@@ -15987,7 +15987,7 @@ a:hover {
 }
 .aside-dropdown__inner {
     position: relative;
-    width: 320px;
+    width: 290px;
     min-height: 100%;
     -webkit-transform: translateX(-320px);
     -ms-transform: translateX(-320px);
@@ -16002,7 +16002,7 @@ a:hover {
 }
 .aside-dropdown__item:first-of-type,
 .aside-dropdown__item:nth-of-type(2) {
-    padding: 0 65px;
+    padding: 0 15px;
 }
 .aside-dropdown__item:nth-of-type(2) {
     margin-top: 50px;
@@ -16190,6 +16190,7 @@ header.header {
     -webkit-transition: background 0.3s;
     -o-transition: background 0.3s;
     transition: background 0.3s;
+    min-height: 80px;
 }
 @media only screen and (min-width: 576px) {
     header.header {
@@ -16206,14 +16207,26 @@ header.header .row {
 }
 header.header .button {
     font-size: 14px;
-    width: 180px;
+    width: 160px;
     display: none;
 }
-@media only screen and (min-width: 836px) {
+@media only screen and (min-width: 768px) {
     header.header .button {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+    }
+
+    header.header .button {
+        width: 120px;
+        min-width: 120px;
+    }
+}
+@media only screen and (min-width: 992px) {
+
+    header.header .button {
+        width: 180px;
+        min-width: 160px;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -16295,7 +16308,7 @@ header.header--inner {
 .dropdown-trigger__item::after,
 .dropdown-trigger__item::before {
     background: #282a43;
-    height: 2px;
+    height: 3px;
     -webkit-transition: opacity 0.3s;
     -o-transition: opacity 0.3s;
     transition: opacity 0.3s;
@@ -16341,7 +16354,7 @@ header.header--inner {
 }
 @media only screen and (min-width: 836px) {
     .header-logo__img {
-        max-height: 50px;
+        max-height: 45px;
     }
 }
 @media only screen and (min-width: 1367px) {
@@ -16705,7 +16718,7 @@ header.header--front_2 {
     -webkit-box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.04);
     box-shadow: 0 3px 10px 2px rgba(0, 0, 0, 0.04);
 }
-@media only screen and (min-width: 572px) {
+@media only screen and (min-width: 768px) {
     header.header--front_3 {
         position: static;
         background: #fff;
@@ -16745,7 +16758,7 @@ header.header--intro .button {
     margin: 0;
     display: none;
 }
-@media only screen and (min-width: 836px) {
+@media only screen and (min-width: 768px) {
     .main-menu {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
@@ -16757,7 +16770,7 @@ header.header--intro .button {
     position: relative;
 }
 .main-menu__item:not(:last-of-type) {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 @media only screen and (min-width: 1200px) {
     .main-menu__item:not(:last-of-type) {
@@ -17473,9 +17486,9 @@ header.header--intro .button {
     color: #fff;
     height: 45px;
     width: 45px;
-    border: 2px solid #efc940;
+    /* border: 2px solid #efc940; */
     border-radius: 50%;
-    bacground: transparent;
+    background: transparent;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -17485,8 +17498,8 @@ header.header--intro .button {
 }
 .slider__next:hover,
 .slider__prev:hover {
-    color: #343877;
-    background-color: #efc940;
+    color: #f4bf00;
+    /* background-color: #efc940; */
 }
 .promo--front_2 .slider__nav--promo {
     right: auto;
@@ -17880,7 +17893,13 @@ header.header--intro .button {
     padding-top: 76.47059%;
 }
 .causes-item--primary .causes-item__body, .route-body, .form-body {
-    padding: 45px 15px 46px 15px;
+    padding: 45px 15px 15px 15px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 15px 0 rgba(15, 13, 13, 0.06);
+    box-shadow: 0 0 15px 0 rgba(15, 13, 13, 0.06);
+}
+.form-body-2 {
+    padding: 45px 15px 45px 15px;
     background: #fff;
     -webkit-box-shadow: 0 0 15px 0 rgba(15, 13, 13, 0.06);
     box-shadow: 0 0 15px 0 rgba(15, 13, 13, 0.06);
@@ -18138,9 +18157,9 @@ header.header--intro .button {
 }
 .projects-masonry__inner {
     width: 100%;
-    max-width: 340px;
+    /* max-width: 340px; */
     text-align: center;
-    padding: 30px 0;
+    padding: 20px;
 }
 .projects-masonry__text {
     display: -webkit-box;
@@ -18153,6 +18172,7 @@ header.header--intro .button {
     -ms-flex-align: center;
     align-items: center;
     color: #fff;
+    height: 100%;
 }
 .projects-masonry__badge {
     display: inline-block;
@@ -18368,34 +18388,33 @@ header.header--intro .button {
 }
 .text-section__heading {
     color: #efc940;
-    font-size: 130px;
-    margin-top: -70px;
+    font-size: 180px;
     line-height: 1;
     font-weight: 400;
     font-family: Storytella, sans-serif;
 }
 @media only screen and (min-width: 576px) {
     .text-section .text-section__heading {
-        font-size: 200px;
-        margin-top: 0;
-        line-height: 150px;
+        font-size: 100px;
+        line-height: 100px;
     }
 }
 @media only screen and (min-width: 768px) {
     .text-section .text-section__heading {
-        font-size: 300px;
-        line-height: 215px;
+        font-size: 100px;
+        line-height: 100px;
     }
 }
 @media only screen and (min-width: 992px) {
     .text-section .text-section__heading {
-        font-size: 200px;
-        line-height: 160px;
+        font-size: 140px;
+        line-height: 140px;
     }
 }
 @media only screen and (min-width: 1200px) {
     .text-section .text-section__heading {
-        font-size: 200px;
+        font-size: 180px;
+        line-height: 180px;
     }
 }
 .text-section__title {
